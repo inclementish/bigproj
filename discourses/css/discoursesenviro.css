@@ -1,0 +1,263 @@
+.container {
+	height: 1800px;
+	width: auto;
+}
+
+.ball {
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	background-color: white;
+	left: 800px;
+	top: 130px;
+	z-index: 8;
+	position: absolute;
+	margin: auto;
+		animation: ball 2s cubic-bezier(0.3,0.28,1,1);
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
+}
+
+@keyframes ball {
+			0% {  }
+			50% {transform: translateX(100px) translateY(130px);}
+			100% {transform: translateX(130px) translateY(130px);}
+		}
+
+.nav {
+	background-color: white;
+	height: 150px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+	.home {
+		font-family: mrs-eaves, serif;
+		font-style: normal;
+		font-size: 35px;
+		padding-left: 50px;
+		padding-top: 35px;
+		position: absolute;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	.links {
+		font-family: mr-eaves-modern, sans-serif;
+		font-style: normal;
+		font-weight: 100;
+		font-size: 16px;
+		float: right;
+		width: 20%;
+		padding-right: 10px;
+		padding-top: 50px;
+		position: relative;
+		color: #492513;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+		.links:hover {
+			font-weight: bolder;
+		}	
+
+		a {
+			text-decoration: none;
+			color: #492513;
+		}
+
+			a:hover {
+				color: #008E71;
+			}
+
+	.active {
+		font-weight: bold;
+		color: #008E71;
+	}
+
+.copy {
+	font-family: mr-eaves-modern, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	color: #492513;
+	width: 260px;
+	position: relative;
+	left: 20px;
+	top: 20px;
+}
+
+	.copy2 {
+	font-family: mr-eaves-modern, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 16px;
+	color: #492513;
+	width: 350px;
+	position: relative;
+	left: 20px;
+	top: 20px;
+}
+
+	.copylist {
+		font-family: mr-eaves-modern, sans-serif;
+		font-style: normal;
+		font-weight: 100;
+		font-size: 16px;
+		color: #492513;
+		position: relative;
+		left: 40px;
+		top: 30px;
+		width: 300px;
+	}
+
+	.title {
+		font-weight: bold;
+	}
+
+.copybox {
+	position: fixed;
+	height: 540px;
+	width: 300px;
+	background: white;
+	z-index: 9;
+	top: 40px;
+	bottom: 0;
+	right: 90px;
+	margin: auto;
+	opacity: 0;
+	animation: boxSlide 2s forwards;
+}
+
+	@keyframes boxSlide{
+		0% {right: -400px; top: 40px; opacity: 0;}
+		100% {opacity: 1;}
+	}
+
+.copybox2 {
+	position: absolute;
+	height: 290px;
+	width: 410px;
+	background: white;
+	z-index: 8;
+	top: 1400px;
+	left: 0px;
+	bottom: 0;
+	float: left;
+	margin: auto;
+	display: none;
+	animation: boxSlideagain 2s linear;
+}
+
+	@keyframes boxSlideagain{
+		0% { left: -400px; bottom: 0; top: 1400px; }
+		100% {  }
+	}
+
+.copybox3 {
+	position: absolute;
+	height: 290px;
+	width: 410px;
+	background: white;
+	z-index: 8;
+	top: 2200px;
+	left: 400px;
+	bottom: 0;
+	float: left;
+	margin: auto;
+	display: none;
+	animation: boxSlidethrice 2s linear;
+}
+
+	@keyframes boxSlidethrice{
+		0% { left: -1300px; bottom: 0; top: 2200px; }
+		100% {  }
+	}
+
+.bgillus img {
+ 	width: 100%;
+  	height: auto;
+  	background-repeat: no-repeat;
+  	position: absolute;
+  	top: 100px;
+}
+
+	.stump1 img {
+		width: 30%;
+		height: auto;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 680px;
+		left: 0px;
+		z-index: 15;
+	}
+
+	.stump2 img {
+		width: 40%;
+		height: auto;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 850px;
+		left: 300px;
+		z-index: 15;
+	}
+
+	.animal1 img {
+		width: 25%;
+		height: auto;
+		transform: rotate(-10deg);
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 950px;
+		left: 650px;
+		z-index: 15;
+		animation: squirrel 3s forwards;
+		animation-delay: 3s;
+	}
+
+		@keyframes squirrel {
+			0% {  }
+			100% {top: 1075px; left: 325px; width: 30%;}
+		}
+
+	.animal2 img {
+		width: 35%;
+		height: auto;
+		background-repeat: no-repeat;
+		position: absolute;
+		top: 1100px;
+		left: 100px;
+		z-index: 15;
+		animation: bunny 3s forwards;
+		animation-delay: 3.5s;
+	}
+
+		@keyframes bunny {
+			0% {  }
+			100% {top: 1300px; left: -50px; width: 40%;}
+		}
+
+.foot {
+	background-color: white;
+	height: 150px;
+	width: 100%;
+	top: 1700px;
+	position: absolute;
+}
+
+.footer {
+	font-family: mr-eaves-modern, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 14px;
+	padding-left: 50px;
+	padding-top: 45px;
+	color: #492513;
+	width: 270px;
+	position: relative;
+}
+
+
+
+
